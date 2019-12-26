@@ -15,14 +15,13 @@ import java.util.Arrays;
 public class Factorization {
 
     public static void main(String[] args) {
-        Factorization test = new Factorization();
-        System.out.println(Arrays.toString(test.methodOne(25)));
+        System.out.println(Arrays.toString(Factorization.methodOne(25)));
     }
 
     /**
      * 埃拉托色尼筛选法
      */
-    private int[] methodOne(int n) {
+    public static int[] methodOne(int n) {
         int[] array = new int[n + 1];
         for (int i = 2; i < array.length; i++) {
             array[i] = 1;
